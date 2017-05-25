@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afterman.nStuff.Core", "src\Afterman.nStuff.Core\Afterman.nStuff.Core.csproj", "{53864A77-3E90-44DE-BACC-624AB5EF0ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afterman.nStuff.Core.Tests", "tests\Afterman.nStuff.Core.Tests\Afterman.nStuff.Core.Tests.csproj", "{10BBA83F-9A3D-4AB4-9BD1-0513AB27DB65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53864A77-3E90-44DE-BACC-624AB5EF0ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53864A77-3E90-44DE-BACC-624AB5EF0ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53864A77-3E90-44DE-BACC-624AB5EF0ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53864A77-3E90-44DE-BACC-624AB5EF0ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BBA83F-9A3D-4AB4-9BD1-0513AB27DB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BBA83F-9A3D-4AB4-9BD1-0513AB27DB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BBA83F-9A3D-4AB4-9BD1-0513AB27DB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BBA83F-9A3D-4AB4-9BD1-0513AB27DB65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

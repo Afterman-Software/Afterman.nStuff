@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53864A77-3E90-44DE-BACC-624AB5EF0ADD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Afterman.nStuff.Core</RootNamespace>
+    <AssemblyName>Afterman.nStuff.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ballots\Ballot.cs" />
+    <Compile Include="Ballots\BallotBox.cs" />
+    <Compile Include="Ballots\BallotBoxResults.cs" />
+    <Compile Include="Core\Dates\Calendars\IFiscalCalendar.cs" />
+    <Compile Include="Core\Dates\DateRangeProvider.cs" />
+    <Compile Include="Core\Dates\Calendars\FiscalCalendar.cs" />
+    <Compile Include="Core\Dates\IDateRangeProvider.cs" />
+    <Compile Include="Core\Extensions\Dates\DateRoundingExtensions.cs" />
+    <Compile Include="Core\Extensions\Objects\ObjectCastExtensions.cs" />
+    <Compile Include="Core\Extensions\Reflection\TypeExtensions.cs" />
+    <Compile Include="Core\Extensions\Strings\StringPrimitiveConversionExtensions.cs" />
+    <Compile Include="Core\Serialization\IXmlSerializer.cs" />
+    <Compile Include="Core\Serialization\XmlSerializer.cs" />
+    <Compile Include="Core\Xml\IXmlPayloadReader.cs" />
+    <Compile Include="Core\Xml\IXmlPayloadWriter.cs" />
+    <Compile Include="Core\Xml\Node.cs" />
+    <Compile Include="Core\Xml\NodeAttribute.cs" />
+    <Compile Include="Core\Xml\XmlPayloadReader.cs" />
+    <Compile Include="Core\Xml\XmlPayloadWriter.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.CommonsDataFormats.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Types.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Xml.cs" />
+    <Compile Include="Defensive\FluentlyDefend.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Dates.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Generics.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Numbers.Floats.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Numbers.Ints.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Numbers.Decimals.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Objects.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Numbers.Shorts.cs" />
+    <Compile Include="Defensive\AssertionSets\AssertionSet.RegEx.cs" />
+    <Compile Include="Defensive\Framework\AssertionMode.cs" />
+    <Compile Include="Defensive\Framework\KnownRegexLiterals.cs" />
+    <Compile Include="Defensive\Framework\ValidationMode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Extensions\Xml\XmlNodeExtensions.cs" />
+    <Compile Include="Web\IRestPost.cs" />
+    <Compile Include="Web\RestPost.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Strings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Defensive\AssertionSets\AssertionSet.Numbers.Longs.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
